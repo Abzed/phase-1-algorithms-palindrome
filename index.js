@@ -1,13 +1,28 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  if (word != undefined) {
+    let revWord = word.split('').reverse().join('')
+    if (revWord === word){
+      return true
+    }
+    else{
+      return false
+    }
+  }
 }
 
 /* 
-  Add your pseudocode here
+  func takes a word as arg
+    reverse the word
+    if word the word == word in reverse
+      return true
+    else return false
 */
 
 /*
-  Add written explanation of your solution here
+  First checks if (word) is not empty
+  It reverses the (word)
+  Checks if reverse(word) === (word)
+  returns true or false
 */
 
 // You can run `node index.js` to view these console logs
